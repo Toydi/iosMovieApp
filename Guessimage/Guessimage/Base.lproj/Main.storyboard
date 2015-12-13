@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,22 +18,114 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电影猜猜猜" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTN-Rm-zpR">
-                                <rect key="frame" x="258" y="289" width="85" height="21"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ala-G5-VdO">
+                                <rect key="frame" x="0.0" y="364" width="600" height="236"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0j-Uj-igv">
+                                <rect key="frame" x="0.0" y="20" width="600" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="恐怖片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKo-Q0-PSH">
+                                <rect key="frame" x="0.0" y="49" width="600" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDj-Jb-342">
+                                <rect key="frame" x="506" y="28" width="74" height="22"/>
+                                <animations/>
+                                <state key="normal" title="10000" image="coin"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kay-ra-coS">
+                                <rect key="frame" x="225" y="89" width="150" height="150"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Kd1-zc-ITb"/>
+                                    <constraint firstAttribute="height" constant="150" id="Nhn-fs-9my"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                <state key="normal" image="movie_ygbh" backgroundImage="center_img"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWg-UV-irm">
+                                <rect key="frame" x="0.0" y="109" width="70" height="36"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Af8-YO-0Kr"/>
+                                    <constraint firstAttribute="height" constant="36" id="mO1-88-E3a"/>
+                                </constraints>
+                                <state key="normal" title="提示" image="icon_tip" backgroundImage="btn_left"/>
+                                <state key="highlighted" image="icon_tip" backgroundImage="btn_left_highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufN-hM-RdC">
+                                <rect key="frame" x="530" y="109" width="70" height="36"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="N3n-zY-tIV"/>
+                                    <constraint firstAttribute="width" constant="70" id="q0r-8Z-FxV"/>
+                                </constraints>
+                                <state key="normal" title="大图" image="icon_img" backgroundImage="btn_right"/>
+                                <state key="highlighted" image="icon_img" backgroundImage="btn_right_highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NST-UR-MVI">
+                                <rect key="frame" x="530" y="203" width="70" height="36"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Nbg-Y1-Mbl"/>
+                                    <constraint firstAttribute="height" constant="36" id="Ptc-xd-39b"/>
+                                </constraints>
+                                <state key="normal" title="下一题" backgroundImage="btn_right"/>
+                                <state key="highlighted" backgroundImage="btn_right_highlighted"/>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sw2-DH-q0k">
+                                <rect key="frame" x="-6" y="288" width="600" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="R3I-zp-ht5"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="zTN-Rm-zpR" secondAttribute="centerY" id="UHL-iF-ul4"/>
-                            <constraint firstAttribute="centerX" secondItem="zTN-Rm-zpR" secondAttribute="centerX" id="yEj-gE-V8M"/>
+                            <constraint firstItem="DWg-UV-irm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="2uZ-cp-9dY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NST-UR-MVI" secondAttribute="trailing" constant="-20" id="2yM-ln-2Xu"/>
+                            <constraint firstItem="ala-G5-VdO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8fD-W1-9op"/>
+                            <constraint firstItem="ala-G5-VdO" firstAttribute="top" secondItem="Sw2-DH-q0k" secondAttribute="bottom" constant="41" id="DZ4-zF-gn0"/>
+                            <constraint firstItem="FKo-Q0-PSH" firstAttribute="top" secondItem="H0j-Uj-igv" secondAttribute="bottom" constant="8" id="ECY-5n-iD5"/>
+                            <constraint firstItem="Sw2-DH-q0k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6" id="LcB-uO-o42"/>
+                            <constraint firstItem="Sw2-DH-q0k" firstAttribute="top" secondItem="Kay-ra-coS" secondAttribute="bottom" constant="49" id="O3w-nX-cZC"/>
+                            <constraint firstItem="H0j-Uj-igv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="OTb-wS-Hqg"/>
+                            <constraint firstItem="FKo-Q0-PSH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Umw-1v-76O"/>
+                            <constraint firstItem="H0j-Uj-igv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="afH-Fa-t63"/>
+                            <constraint firstItem="Kay-ra-coS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="heN-1t-PcZ"/>
+                            <constraint firstItem="Kay-ra-coS" firstAttribute="top" secondItem="FKo-Q0-PSH" secondAttribute="bottom" constant="19" id="j9S-bn-aSI"/>
+                            <constraint firstItem="cDj-Jb-342" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mce-bf-biN"/>
+                            <constraint firstItem="cDj-Jb-342" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="o2B-VS-EVr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ufN-hM-RdC" secondAttribute="trailing" constant="-20" id="y5b-Bg-y4c"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="368" y="663"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_left" width="70" height="36"/>
+        <image name="btn_left_highlighted" width="70" height="36"/>
+        <image name="btn_right" width="70" height="36"/>
+        <image name="btn_right_highlighted" width="70" height="36"/>
+        <image name="center_img" width="165" height="212"/>
+        <image name="coin" width="20" height="20"/>
+        <image name="icon_img" width="20" height="20"/>
+        <image name="icon_tip" width="20" height="20"/>
+        <image name="movie_ygbh" width="640" height="702"/>
+    </resources>
 </document>
